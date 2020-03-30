@@ -1,0 +1,154 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: $side-color;
+  padding: 1em 3em;
+  width: 350px;
+  position: absolute;
+  left: -370px;
+  transition: all .5s ease;
+
+  .header-side {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    left: 0;
+
+    .dots-logo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 1em;
+
+      .dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $secondary-color;
+        margin-left: 10px;
+
+        &:nth-child(1) {
+          background: #b24343;
+        }
+
+        &:nth-child(2) {
+          background: #c19d57;
+        }
+      }
+    }
+
+    .head-icon {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      img {
+        margin-right: 1em;
+        opacity: 0.5;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .set {
+      background: #3a3a3a;
+      padding: 10px 30px;
+      border-radius: 5px;
+      position: absolute;
+      right: -5.5em;
+      top: -1em;
+      display: none;
+
+      ul {
+        list-style-type: none;
+
+        li {
+          margin: 0 0 10px;
+
+          &:last-child {
+            margin: 0;
+          }
+
+          a {
+            opacity: 0.6;
+            font-size: 18px;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background: #3a3a3a;
+        left: -0.3em;
+        top: 1em;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+
+  .menus {
+    margin: 15vh 0 40px;
+
+    .menu {
+      padding: 10px 5px 10px 10px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+
+      &:not(.active):hover {
+        background: $bg-hover;
+        border-radius: 0;
+      }
+
+      span {
+        display: block;
+        width: 100%;
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: $side-font;
+      }
+    }
+  }
+
+  .account {
+    margin-bottom: 280px;
+
+    .title {
+      margin-bottom: 10px;
+      color: #797979;
+      display: block;
+      margin-left: 50px;
+    }
+
+    .menu {
+      padding: 10px 5px 10px 10px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+
+      &:not(.active):hover {
+        background: $bg-hover;
+        border-radius: 0;
+      }
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      margin-left: 10px;
+      cursor: pointer;
+      font-size: $side-font;
+    }
+  }
+}

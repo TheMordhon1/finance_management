@@ -1,0 +1,45 @@
+$bg-color:#2C2C2C;
+$side-color:#242424;
+$primary-color:#fcfcfc;
+$secondary-color:#21BF74;
+$side-font: 20px;
+$bg-hover:rgb(58, 58, 58);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $bg-color;
+  color: $primary-color;
+  font-size: $side-font;
+  display: flex;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+img:not(.card) {
+  cursor: pointer;
+}
+
+.green {
+  color: $secondary-color;
+  font-size: 14px;
+}
+
+.red {
+  color: #DA5757;
+  font-size: 14px;
+}
+
+.grey {
+  color: #888;
+}

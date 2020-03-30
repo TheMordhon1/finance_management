@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/Chart.css" />
+    <title>Finance Management</title>
+  </head>
+
+  <body>
+    <div class="break move" id="sidebar">
+      <div class="sidebar">
+        <!-- Header_side bar -->
+        <div class="header-side" id="side">
+          <div class="dots-logo">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="head-icon">
+            <img src="img/icon/btn_plus.svg" alt="" />
+            <img src="img/icon/dots.svg" onclick="showSet();" alt="" />
+          </div>
+          <div class="set">
+            <ul>
+              <li><a href="">Setting</a></li>
+              <li><a href="">History</a></li>
+              <li><a href="">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Main Menu -->
+        <div class="menus">
+          <div class="menu active">
+            <img src="img/icon/ic_overview.svg" alt="" />
+            <span class="get">Overview</span>
+          </div>
+          <div class="menu">
+            <img src="img/icon/ic_budjet.svg" alt="" />
+            <span class="get">Budget</span>
+          </div>
+          <div class="menu">
+            <img src="img/icon/ic_schedule.svg" alt="" />
+            <span class="get">Schedule</span>
+          </div>
+          <div class="menu">
+            <img src="img/icon/ic_report.svg" alt="" />
+            <span class="get">Reports</span>
+          </div>
+        </div>
+
+        <!-- Account-Menu -->
+        <div class="account" id="on">
+          <h3 class="title">Accounts</h3>
+          <div class="menu">
+            <img src="img/icon/accounts/ic_all.svg" alt="" />
+            <span class="get">All Transactions</span>
+          </div>
+          <div class="menu">
+            <img src="img/icon/accounts/ic_cash.svg" alt="" />
+            <span class="get">Cash <small class="green">(200M)</small></span>
+          </div>
+          <div class="menu">
+            <img src="img/icon/accounts/ic_credit.svg" alt="" />
+            <span class="get"
+              >Credit Cash <small class="green">(350M)</small></span
+            >
+          </div>
+          <div class="menu">
+            <img src="img/icon/accounts/ic_business.svg" alt="" />
+            <span class="get">Business <small class="green">(2B)</small></span>
+          </div>
+          <div class="menu">
+            <img src="img/icon/accounts/ic_loan.svg" alt="" />
+            <span class="get">Loan <small class="red">(120M)</small></span>
+          </div>
+          <div class="menu">
+            <img src="img/icon/accounts/ic_asset.svg" alt="" />
+            <span class="get">Asset</span>
+          </div>
+          <div class="menu">
+            <img src="img/icon/accounts/ic_invest.svg" alt="" />
+            <span class="get">Investment</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large-Box -->
+      <div class="large-box">
+        <!-- Header Large Area -->
+        <div class="header-large">
+          <h1 class="title">Overview</h1>
+          <div class="head-icon">
+            <div class="search-box">
+              <input
+                class="search-txt"
+                type="text"
+                placeholder="Type to Search"
+              />
+              <a href="#" class="search-btn">
+                <img src="img/icon/large/ic_search.svg" alt="" />
+              </a>
+            </div>
+            <img
+              src="img/icon/large/btn_plus.svg"
+              alt=""
+              onclick="showSide();"
+              class="btn"
+              title="sidebar"
+            />
+          </div>
+        </div>
+
+        <!-- Box Large Area -->
+
+        <!-- First Row -->
+        <div class="row">
+          <!-- All Transactions -->
+          <div class="box">
+            <div class="head-box">
+              <span>All Transactions</span>
+              <img src="img/icon/large/box/btn_plus.svg" alt="plus" />
+            </div>
+            <div class="content-box">
+              <img src="img/icon/large/box/1/ic_item1.svg" alt="" />
+              <div class="name-item">
+                <span>Mc Donalds</span>
+                <p>Food</p>
+              </div>
+              <span class="amount red">Rp. 2M</span>
+            </div>
+            <div class="content-box">
+              <img src="img/icon/large/box/1/ic_drive.svg" alt="" />
+              <div class="name-item">
+                <span>Google Drive</span>
+                <p>Storage</p>
+              </div>
+              <span class="amount green">Rp. 1M</span>
+            </div>
+            <div class="content-box">
+              <img src="img/icon/large/box/1/ic_internet.svg" alt="" />
+              <div class="name-item">
+                <span>Indihome</span>
+                <p>Internet</p>
+              </div>
+              <span class="amount red">Rp. 2M</span>
+            </div>
+          </div>
+
+          <!-- Reports -->
+          <div class="box">
+            <div class="head-box">
+              <span>Reports</span>
+              <img src="img/icon/large/box/btn_plus.svg" alt="" />
+            </div>
+            <div class="box-report">
+              <div class="item">
+                <img src="img/icon/large/box/report/worth.svg" alt="" />
+                <span>Rp.20M</span>
+                <p>Worth</p>
+              </div>
+              <div class="item">
+                <img src="img/icon/large/box/report/spent.svg" alt="" />
+                <span>Rp. 10M</span>
+                <p>Spent</p>
+              </div>
+              <div class="item">
+                <img src="img/icon/large/box/report/earn.svg" alt="" />
+                <span>Rp. 40M</span>
+                <p>Earn</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scheduler -->
+          <div class="box">
+            <div class="head-box">
+              <span>Scheduler</span>
+              <img src="img/icon/large/box/btn_plus.svg" alt="" />
+            </div>
+            <div class="calendar">
+              <iframe
+                src="https://calendar.google.com/calendar/embed?height=200&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FJakarta&amp;src=dWRhaG1ha2FuZG9uQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=aWQuaW5kb25lc2lhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uaW5kb25lc2lhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23616161&amp;color=%2333B679&amp;color=%230B8043&amp;color=%230B8043&amp;showTabs=0&amp;showTz=0&amp;title=%20&amp;showDate=1&amp;showPrint=0"
+                style="border-width:0"
+                width="280"
+                height="180"
+                frameborder="0"
+                scrolling="no"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="grid">
+          <!-- Retirement -->
+          <div class="box">
+            <div class="head-box">
+              <span>Retirement</span>
+              <img src="img/icon/large/box/btn_plus.svg" alt="" />
+            </div>
+            <div class="box-content-retirement">
+              <div class="deposit">
+                <img
+                  src="img/icon/large/box/retirement/ic_deposit.svg"
+                  alt=""
+                />
+                <span class="amount-retirement">
+                  Rp. 40,000,000.00
+                </span>
+                <p class="grey">Today’s Deposit</p>
+              </div>
+              <div class="v-project">
+                <img
+                  src="img/icon/large/box/retirement/ic_value_project.svg"
+                  alt=""
+                />
+                <span class="amount-retirement">
+                  Rp. 100,000,000.00
+                </span>
+                <p>Value Project</p>
+              </div>
+            </div>
+          </div>
+          <!-- Credit Card -->
+          <div class="box">
+            <div class="head-box">
+              <span>Credit Card</span>
+              <img src="img/icon/large/box/btn_plus.svg" alt="" />
+            </div>
+            <div class="box-content">
+              <img
+                src="img/icon/large/box/credit-card/lock.svg"
+                alt=""
+                class="lock"
+              />
+              <img
+                src="img/icon/large/box/credit-card/card.svg"
+                alt=""
+                class="card"
+                title="Credit Card"
+              />
+            </div>
+          </div>
+
+          <!-- Third Row -->
+          <!-- Investment -->
+          <div class="box">
+            <div class="head-box">
+              <span>Invesment</span>
+              <img src="img/icon/large/box/btn_plus.svg" alt="" />
+            </div>
+            <div class="box-investment">
+              <div class="left">
+                <img src="img/icon/large/box/report/worth.svg" alt="" />
+                <span>Rp. 20M</span>
+                <p>Market Value</p>
+              </div>
+              <div class="right">
+                <img src="img/icon/large/box/report/worth.svg" alt="" />
+                <span>Rp. 20M</span>
+                <p>Cash Balance</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business -->
+          <div class="box">
+            <div class="head-box">
+              <span>Business</span>
+              <img src="img/icon/large/box/btn_plus.svg" alt="" />
+            </div>
+            <div class="box-business">
+              <canvas id="myChart" width="90" height="90"></canvas>
+            </div>
+          </div>
+
+          <!-- Budget -->
+          <div class="box-tall">
+            <div class="head-box">
+              <span>Budget</span>
+              <img src="img/icon/large/box/btn_plus.svg" alt="" />
+            </div>
+
+            <div class="box-budget">
+              <!-- Income -->
+              <div class="income">
+                <div class="left-income">
+                  <p class="title">Income</p>
+                  <span class="amount">Rp. 40M of Rp. 100M</span>
+                </div>
+                <div class="right-income">
+                  <span class="title">Rp. 60M</span>
+                  <p class="align-right">Over</p>
+                </div>
+              </div>
+              <hr />
+
+              <!-- Expense -->
+              <div class="expense">
+                <div class="left-Expense">
+                  <p class="title">Expense</p>
+                  <span class="amount">Rp. 40M of Rp. 100M</span>
+                </div>
+                <div class="right-Expense">
+                  <span class="title">Rp. 60M</span>
+                  <p class="align-right">Over</p>
+                </div>
+              </div>
+
+              <!-- List-Budget -->
+              <div class="list">
+                <h5>List</h5>
+                <hr />
+                <div class="list1">
+                  <img src="img/icon/large/box/budget/ic_internet.svg" alt="" />
+                  <div class="mid">
+                    <p class="title">Indihome</p>
+                    <span class="amount">Internet</span>
+                  </div>
+                  <div class="right-list">
+                    <span class="title">Rp. 60M</span>
+                    <p>Available</p>
+                  </div>
+                </div>
+
+                <div class="list1">
+                  <img
+                    src="img/icon/large/box/budget/ic_groceries.svg"
+                    alt=""
+                  />
+                  <div class="mid">
+                    <p class="title">Groceries</p>
+                    <span class="amount">Traditional Market</span>
+                  </div>
+                  <div class="right-list">
+                    <span class="title">Rp. 60M</span>
+                    <p>Available</p>
+                  </div>
+                </div>
+
+                <div class="list1">
+                  <img src="img/icon/large/box/budget/ic_gadget.svg" alt="" />
+                  <div class="mid">
+                    <p class="title">Gadget</p>
+                    <span class="amount">Mangga Dua</span>
+                  </div>
+                  <div class="right-list">
+                    <span class="title">Rp. 60M</span>
+                    <p>Available</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Chart JS -->
+    <script src="js/Chart.js"></script>
+    <!-- Regular JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

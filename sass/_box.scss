@@ -1,0 +1,215 @@
+// Report
+.box-report {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .item {
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-areas:
+      "img span"
+      "img p";
+    margin-bottom: 20px;
+
+    img {
+      grid-area: img;
+      margin-top: -3px;
+      margin-right: .5em;
+    }
+
+    span {
+      grid-area: span;
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      grid-area: p;
+      font-size: 14px;
+      color: #888;
+      font-weight: bold;
+    }
+  }
+
+}
+
+// Schedule
+.calendar {
+  position: absolute;
+  top: 6.5em;
+  right: .5em;
+  z-index: 1;
+}
+
+// Credit Card
+.box-content {
+  font-size: 18px;
+  color: rgb(92, 92, 92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .card {
+    position: relative;
+    opacity: .8;
+  }
+
+  .lock {
+    position: absolute;
+    z-index: 10;
+    opacity: .6;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &:last-child {
+    height: 100%;
+  }
+}
+
+
+// Retirement
+.box-content-retirement {
+
+  .deposit,
+  .v-project {
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-areas:
+      "img span"
+      "img p";
+    margin-top: 30px;
+
+    img {
+      grid-area: img;
+    }
+
+    span {
+      grid-area: span;
+      font-size: 16px;
+      font-weight: bold;
+
+    }
+
+    p {
+      grid-area: p;
+      font-size: 14px;
+    }
+  }
+
+  .v-project {
+    background: $secondary-color;
+    padding: 1.5em 1em;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+
+
+// Investment
+.box-investment {
+  display: flex;
+  flex-direction: column;
+
+  .left {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .left,
+  .right {
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-areas:
+      "img span"
+      "img p";
+
+    img {
+      grid-area: img;
+      margin-right: .3em;
+    }
+
+    span {
+      grid-area: span;
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      grid-area: p;
+      font-size: 14px;
+      color: #888;
+    }
+  }
+}
+
+// Business
+.box-business {
+  position: relative;
+
+  canvas {
+    position: absolute;
+    top: -30px;
+    z-index: 1;
+  }
+}
+
+// Budget
+.box-budget {
+  margin-top: 30px;
+  position: relative;
+
+  hr {
+    margin: 10px 0;
+  }
+
+  .income,
+  .expense,
+  .list1 {
+    display: flex;
+    justify-content: space-between;
+
+    span,
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      color: $primary-color;
+    }
+
+    .align-right {
+      text-align: right;
+    }
+
+    p,
+    .amount {
+      font-size: 14px;
+      font-weight: 300;
+      color: #888;
+    }
+  }
+
+  .list {
+    margin-top: 5em;
+
+
+    .list1 {
+      margin-bottom: 20px;
+
+      .mid {
+        position: absolute;
+        left: 2.5em;
+      }
+    }
+  }
+}

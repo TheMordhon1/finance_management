@@ -1,0 +1,199 @@
+@import "utilities";
+@import "sidebar";
+@import "config";
+@import "box";
+
+
+// Large Section
+.large-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  transition: all .5s ease;
+
+  .header-large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 4vh;
+
+    .title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+    }
+
+    .head-icon {
+      .search-box {
+        position: absolute;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+        right: 3em;
+        top: -3px;
+
+        .search-btn {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.4s;
+
+          img {
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .search-txt {
+          border: none;
+          border-radius: 5px;
+          background: $bg-hover;
+          outline: none;
+          float: left;
+          padding: 0;
+          color: white;
+          font-size: $side-font;
+          transition: 0.4s;
+          line-height: 40px;
+          width: 0px;
+        }
+
+        &:hover>.search-txt {
+          width: 240px;
+          padding: 2px 10px;
+        }
+      }
+
+      img {
+        opacity: .5;
+        transition: .4s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // BOXES
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+
+    .box {
+      width: 300px;
+      height: 250px;
+      border-radius: 15px;
+      background: #3a3a3a;
+      padding: 1em;
+
+      .head-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 10;
+      }
+
+      .content-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        position: relative;
+
+        .name-item {
+          margin-top: -1px;
+          font-size: 16px;
+          position: absolute;
+          font-weight: bold;
+          left: 4em;
+          display: flex;
+          flex-direction: column;
+
+          p {
+            font-size: 14px;
+            color: #888;
+            font-weight: bold;
+          }
+        }
+
+        .amount {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+        }
+
+        // Schedule
+        .calendar {
+          position: absolute;
+          top: -10em;
+        }
+
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "box1 box2 tall"
+      "box3 box4 tall";
+
+    .box {
+      width: 300px;
+      height: 250px;
+      border-radius: 15px;
+      background: #3a3a3a;
+      grid-area: box1;
+      padding: 1em;
+      margin: 1em 1em 0 0;
+      position: relative;
+
+      &:nth-child(2) {
+        grid-area: box2;
+      }
+
+      &:nth-child(3) {
+        grid-area: box3;
+        margin-top: 0;
+      }
+
+      &:nth-child(4) {
+        grid-area: box4;
+        margin-top: 0;
+      }
+
+      .head-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+      }
+    }
+
+    .box-tall {
+      width: 300px;
+      height: 520px;
+      border-radius: 15px;
+      background: #3a3a3a;
+      grid-area: tall;
+      padding: 1em;
+      margin: 1em 0;
+      position: relative;
+
+      .head-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
