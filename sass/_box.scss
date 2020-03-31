@@ -38,7 +38,7 @@
 // Schedule
 .calendar {
   position: absolute;
-  top: 6.5em;
+  top: 7.5em;
   right: .5em;
   z-index: 1;
 }
@@ -136,6 +136,7 @@
     img {
       grid-area: img;
       margin-right: .3em;
+      margin-top: -5px;
     }
 
     span {
@@ -172,6 +173,10 @@
 
   hr {
     margin: 10px 0;
+    border-color: $secondary-color;
+    box-shadow:
+      2px 2px 15px $secondary-color,
+      -2px -2px 15px $secondary-color;
   }
 
   .income,
@@ -204,7 +209,11 @@
 
 
     .list1 {
-      margin-bottom: 20px;
+      margin: 20px 0;
+
+      img {
+        margin-top: -3px;
+      }
 
       .mid {
         position: absolute;
