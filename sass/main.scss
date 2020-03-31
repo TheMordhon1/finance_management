@@ -98,6 +98,11 @@
         margin-bottom: 30px;
         position: relative;
         z-index: 10;
+
+        span {
+          font-weight: bold;
+          font-size: 20px;
+        }
       }
 
       .content-box {
@@ -107,12 +112,14 @@
         margin-bottom: 20px;
         position: relative;
 
+
+
         .name-item {
-          margin-top: -1px;
+          top: 3px;
           font-size: 16px;
           position: absolute;
           font-weight: bold;
-          left: 4em;
+          left: 3.5em;
           display: flex;
           flex-direction: column;
 
@@ -176,6 +183,11 @@
         align-items: center;
         position: relative;
         z-index: 10;
+
+        span {
+          font-weight: bold;
+          font-size: 20px;
+        }
       }
     }
 
@@ -193,6 +205,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        span {
+          font-weight: bold;
+          font-size: 20px;
+        }
       }
     }
   }
